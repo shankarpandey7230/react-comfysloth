@@ -21,7 +21,7 @@ const products_reducer = (state, action) => {
   }
   if(action.type=== GET_PRODUCTS_SUCCESS){
     const featured_products =action.payload.filter((product)=>product.featured===true )
-    return {...state,products_loading:false,product:action.payload,featured_products,}
+    return {...state,products_loading:false,products:action.payload,featured_products,}
   }
   if(action.type===GET_PRODUCTS_ERROR){
     return{...state, products_loading:false,products_error:true}
@@ -36,7 +36,7 @@ const products_reducer = (state, action) => {
     return{...state, single_product_loading:false,
     single_product:action.payload}
   }
-  if(action.type ===GET_SINGLE_PRODUCT_ERROR){
+  if(action.type === GET_SINGLE_PRODUCT_ERROR){
     return{
       ...state,
       single_product_loading:false,
