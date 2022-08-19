@@ -4,7 +4,7 @@ import products_reducer from '../reducers/products_reducer';
 import Product from './Product'
 
 const GridView = ({products}) => {
-  console.log({products});
+  
   return (
     <Wrapper>
     <div className='products-container'>
