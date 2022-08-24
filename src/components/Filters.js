@@ -66,6 +66,7 @@ const Filters = () => {
 
           </div>
           {/* end of categories */}
+          
         </form>
       </div>
     </Wrapper>
