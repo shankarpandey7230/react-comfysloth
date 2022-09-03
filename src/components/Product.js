@@ -8,9 +8,9 @@ const Product = ({image, name, price, id}) => {
   return (
     <Wrapper>
       <div className='container'>
-        <img src ={image} alt={name}/>
-        <Link to ={`/products/${id}`} className='link'>
-          <FaSearch/>
+        <img src ={image} alt ={name}/>
+        <Link  to ={`/products/${id}`} className='link'>
+          <FaSearch /> 
         </Link>
       </div>
       <footer>
@@ -18,7 +18,7 @@ const Product = ({image, name, price, id}) => {
         <p>{formatPrice(price)}</p>
       </footer>
     </Wrapper>
-  );
+  )
 }
 
 const Wrapper = styled.article`

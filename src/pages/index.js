@@ -7,9 +7,7 @@ import Error from './ErrorPage'
 import Checkout from './CheckoutPage'
 import PrivateRoute from './PrivateRoute'
 
-
-
-export{
+export {
     Home,
     Products,
     SingleProduct,
@@ -18,4 +16,4 @@ export{
     Error,
     Checkout,
     PrivateRoute,
-    }
+}

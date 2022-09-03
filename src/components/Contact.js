@@ -4,24 +4,26 @@ import styled from 'styled-components'
 const Contact = () => {
   return (
     <Wrapper>
-     <div className='section-center'>
-      <h3>Join our newsletter and get 25% off</h3>
-      <div className='content'>
-        <p>
-          Shankar Pandey's wife will also be succeeded and give hand to shankar to be a successful man
-        </p>
-        <form 
-        action="https://formspree.io/f/xzbwpkye"
-        method="POST"
-        className='contact-form'>
-          <input type ='email' className='form-input' placeholder='Enter email' name='_replyto'/>
+      <div className='section-center'>
+        <h3>Join our newsletter and get 30% off</h3>
+        <div className='content'>
+          <p>
+            Definitely, Certainly, Possibly, Easily, Surely, Hurriedly
+          </p>
+          <form action="https://formspree.io/f/xzbwpkye"
+                method="POST" 
+                
+                className='contact-form'>
+            <input type='email' className='form-input' placeholder='enter email' name='_replyto'/>
+            <button type='submit' className='submit-btn'>
+              subscribe
+            </button>
+          </form>
 
-          <button type='submit' className='submit-btn'>Subscribe</button>
-        </form>
+        </div>
       </div>
-      </div> 
     </Wrapper>
-  );
+  )
 }
 const Wrapper = styled.section`
   padding: 5rem 0;

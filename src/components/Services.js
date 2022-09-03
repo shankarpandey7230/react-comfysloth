@@ -4,33 +4,30 @@ import { services } from '../utils/constants'
 
 const Services = () => {
   return (
-    <Wrapper>
-      <div className='section-center'>
-        <article className='header'>
-          <h3>Custom Furniture<br/>
-          built only for you 
-          
-          </h3>
-          <p>Shankar Pandey will be well established enterprenuer all over the world
-          </p>
-        </article>
-        <div className='services-center'>
-          {services.map((service)=>{
-            const {id, icon, title, text}= service;
-            return(
-              <article key ={id} className='service'>
-                <span className='icon'>{icon}</span>
-                <h4>{text}</h4>
-                <p>{text}</p>
-
-              </article>
-            );
-          })}
-        </div>
+  <Wrapper>
+    <div className='section-center'>
+      <article className='header'>
+        <h3>Custom Furniture<br />
+        Built Only For You
+        </h3>
+        <p>
+          Shankar Pandey, a gentle guy will rock the world.
+        </p>
+      </article>
+      <div className='services-center'>
+        {services.map((service)=>{
+          const {id, icon, title, text}= service;
+          return(
+            <article key={id} className='service'>
+              <span className='icon'>{icon}</span>
+              <h4>{title}</h4>
+              <p>{text}</p>
+            </article>
+          )
+        })}
       </div>
-
-    </Wrapper>
-  );
+    </div>
+  </Wrapper>)
 }
 
 const Wrapper = styled.section`

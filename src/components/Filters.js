@@ -10,67 +10,66 @@ const Filters = () => {
       text,
       category,
       company,
-      color,
+      color, 
       min_price,
-       price,
       max_price,
-      shipping
-    }, 
+      shipping,
+
+    },
     updateFilters,
     clearFilters,
     all_products,
-  } = useFilterContext();
+  }= useFilterContext();
 
-  const categories = getUniqueValues(all_products, 'category' )
-  const companies = getUniqueValues(all_products, 'company' )
-  const colors = getUniqueValues(all_products, 'colors')
+const categories =getUniqueValues(all_products,'category')
+const companies =getUniqueValues(all_products,'company')
+const colors =getUniqueValues(all_products,'colors')
 
-  return(
+
+  return (
     <Wrapper>
       <div className='content'>
         <form onSubmit ={(e)=>e.preventDefault()}>
-          {/* search input */}
+          {/* {search input} */}
           <div className='form-control'>
-            <input type ='text'
-            name='text'
-            placeholder='search '
+            <input 
+            type ='text' 
+            name ='text' 
+            placeholder='search ' 
             className='search-input'
             value={text}
-            onChange={updateFilters}
+            onChange ={updateFilters}
             />
           </div>
+
           {/* end search input */}
           {/* categories */}
           <div className='form-control'>
             <h5>category</h5>
             <div>
-              {
-                categories.map((c, index) => {
-                  return (
-                    <button
-                      key={index}
-                      onClick={updateFilters}
-                      type='button'
-                      name='category'
-                      className={`${
-                        category === c.toLowerCase() ? 'active' : null
-                      }`}
-                    >
-                      {c}
-                    </button>
-                  )
-                })}
-            
-              
-            </div>
+              {categories.map((c,index)=>{
+                return<button key ={index}
+                onClick={updateFilters}
+                type='button'
+                name='category'
+                className={`${
+                  category === c.toLowerCase()? 'active':null
+                }`}
+                   >
+                  {c}
+                </button>
+              })
 
+              }
+            </div>
           </div>
           {/* end of categories */}
-          
+
         </form>
+
       </div>
     </Wrapper>
-  );
+  )
 }
 
 const Wrapper = styled.section`

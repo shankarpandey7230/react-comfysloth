@@ -6,19 +6,16 @@ import aboutImg from '../assets/hero-bcg.jpeg'
 const AboutPage = () => {
   return (
     <main>
-      <PageHero title= 'about'/>
-      <Wrapper className='page section section-center'>
-        <img src ={aboutImg} alt='nice desk'/>
+      <PageHero  title='about'/>
+      <Wrapper className=' page section section-center'>
+        <img src={aboutImg} alt ='nice desk' />
         <article>
           <div className='title'>
-            <h2>our story</h2>
-            <div className='underline'>
-
-            </div>
+            <h2>Our story</h2>
+            <div className='underline'></div>
           </div>
-          <p>Shankar Pandey is doing good in the front End development of web using React. Eventually he will be a full stack developer and work in his related field of job.</p>
+          <p> Shankar is preparing well and going good.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit pellentesque habitant morbi tristique. Sit amet facilisis magna etiam tempor orci eu. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Volutpat odio facilisis mauris sit amet massa vitae. Curabitur gravida arcu ac tortor dignissim convallis aenean et. Bibendum neque egestas congue quisque egestas diam in. At auctor urna nunc id cursus m.</p>
         </article>
-
 
       </Wrapper>
     </main>
