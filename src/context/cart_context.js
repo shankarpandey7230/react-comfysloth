@@ -39,6 +39,7 @@ const addToCart= (id,color,amount,product)=>{
 }
 // remove item
   const removeItem =(id)=>{
+    dispatch({type:REMOVE_CART_ITEM, payload:id})
 
   }
   //toggle amount
@@ -47,6 +48,7 @@ const addToCart= (id,color,amount,product)=>{
   }
   //clear Cart
   const clearCart =()=>{
+    dispatch({type:CLEAR_CART})
 
   }
 
