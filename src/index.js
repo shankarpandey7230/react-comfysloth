@@ -19,6 +19,7 @@ ReactDOM.render(
     redirectUri={window.location.origin}
     cacheLocation ='localstorage'
   >
+<UserProvider>
 <ProductsProvider>
 <FilterProvider>
 <CartProvider>
@@ -26,6 +27,7 @@ ReactDOM.render(
 </CartProvider>
 </FilterProvider>
 </ProductsProvider>
+</UserProvider>
 </Auth0Provider>
 
 ,document.getElementById('root'))
