@@ -44,7 +44,7 @@ const addToCart= (id,color,amount,product)=>{
   }
   //toggle amount
   const toggleAmount =(id, value)=>{
-    console.log(id,value)
+    
     dispatch({type:TOGGLE_CART_ITEM_AMOUNT, payload : {id, value}})
 
   }
@@ -52,9 +52,10 @@ const addToCart= (id,color,amount,product)=>{
   const clearCart =()=>{
     dispatch({type:CLEAR_CART})
 
-  }
+  } 
 
 useEffect(()=>{
+  dispatch({type:COUNT_CART_TOTALS})
   localStorage.setItem('cart',JSON.stringify(state.cart))
 
 },[state.cart])
