@@ -76,9 +76,7 @@ const cart_reducer = (state, action) => {
 
 
       }
-      else{
-        return item
-      }
+      return item;
     })
     
 
