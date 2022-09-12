@@ -12,6 +12,7 @@ import {Home,
     Error, 
     Products,
     PrivateRoute,
+    AuthWrapper
   } from './pages'
 
 
@@ -19,6 +20,7 @@ import {Home,
 
 function App() {
   return (
+    <AuthWrapper>
   <Router>
     <Navbar/>
     <Sidebar />
@@ -47,7 +49,9 @@ function App() {
     </Switch>
     
     <Footer/>
-    </Router>)
+    </Router>
+    </AuthWrapper>
+    )
 }
 
 export default App
