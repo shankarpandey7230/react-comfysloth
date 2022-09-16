@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+ //eslint-disable-next
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'
 const Stars = ({stars, reviews}) => {
+
   {/* star
         <span>
          {stars>=1?<BsStarFill/>:stars>= 0.5?<BsStarHalf/>:<BsStar />} 
